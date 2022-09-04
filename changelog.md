@@ -319,6 +319,3 @@ Usage for upload:
 MsGraph::files()->upload($name, $uploadPath, $path=null, $type='me',$behavior='rename')
 ```
 Where $behavior is either rename or replace
-
-
-Also modified the MsGraph token call to check if the 'mail' attribute is null.  If it is, it will use the userPrincipalName to set the email on the token.
