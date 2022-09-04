@@ -95,7 +95,6 @@ class MsGraph
                     'info' => $me
                 ];
                 
-                //Check if mail is null.  If so, use userPrincialName for email
                 if ($me['mail'] === null) {
                     $email=$me['userPrincipalName'];
                 } else {

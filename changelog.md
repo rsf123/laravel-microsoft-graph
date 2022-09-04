@@ -278,6 +278,34 @@ added support for Laravel 9
 
 ### 3.1.3
 
+Added files import for MsGraphAdmin
+
+### 3.1.4
+
+## Added
+
+- Test foundation using PestPHP
+- PHP code sniffer fixer and style config
+
+## Changed
+
+- `MSGRAPH_DB_CONNECTION` to be mysql to use a connection called mysql
+- Store name is email cannot be found when connecting
+- Changed responses so if the data is json it gets decoded otherwise the raw body is returned
+- `Msgraph::emails->get($folderId, $params)` returns error when mailbox folder not found
+
+## Fixed
+
+- used MsGraphAdmin instead of MsGraph in admin files resource
+
+### Next
+
+## Added
+
+- added commands `msgraphadmin:keep-alive` and `msgraph:keep-alive` to allow refresh tokens to be automated by running these commands on a schedule
+
+### 3.1.5
+
 Added support in Files.php to support replace/rename behavior on createFolder and file upload functions. Default behavior is to rename.
 
 Usage for createFolder:
